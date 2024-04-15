@@ -76,7 +76,7 @@ footer {
   justify-content: center;
   margin-bottom: 2em;
   .list {
-    width: 14em;
+    width: 24em;
     background-color: var(--sec-color);
     text-align: start;
     padding: 0.5em 1.5em;
