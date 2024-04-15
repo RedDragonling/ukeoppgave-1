@@ -1,0 +1,70 @@
+:root {
+  --main-color: #FFF7F1;
+  --sec-color: #FFE4C9;
+  --tert-color: #BED1CF;
+  --font-color: #1f2121;
+  --font-color-important: #E78895;
+  --font-color-important-hover: #9b4c56;
+  --shadow: #00000050;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--sec-color);
+  color: var(--font-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-page {
+  overflow: hidden;
+}
+
+main {
+  background-color: var(--main-color);
+  width: 70vw;
+  border-left: 4px solid var(--tert-color);
+  border-right: 4px solid var(--tert-color);
+  height: 100vh;
+  text-align: center;
+}
+
+nav {
+  background-color: var(--tert-color);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  ul {
+    display: flex;
+    li {
+      list-style: none;
+      overflow: hidden;
+      padding: 1em 0;
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        color: var(--font-color-important);
+        padding: 1em;
+        transition: 0.1s;
+        &:hover {
+          color: var(--font-color-important-hover);
+          background-color: var(--main-color);
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: var(--tert-color);
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+}
