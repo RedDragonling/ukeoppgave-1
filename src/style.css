@@ -206,3 +206,36 @@ section {
     }
   }
 }
+
+#running-anim {
+  height: 250px;
+  width: 200px;
+  background-image: url(../src/img/running.gif);
+  background-size: cover;
+  position: absolute;
+  top: 250px;
+  left: 250px;
+  animation-name: running;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes running {
+  0% {
+    left: 250px;
+    rotate: -5deg;
+  }
+  50% {
+    left: 750px;
+    rotate: 5deg;
+    transform: scaleX(1);
+  }
+  51% {
+    transform: scaleX(-1);
+  }
+  100% {
+    left: 250px;
+    rotate: -5deg;
+    transform: scaleX(-1);
+  }
+}
