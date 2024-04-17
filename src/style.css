@@ -106,4 +106,14 @@ section {
   padding: 1em;
   margin-bottom: 2em;
   text-align: start;
+  .first-paragraph{
+    color: var(--font-color-important);
+  }
+  &.section-1 {
+    text-align: center;
+  }
+  &.section-4 {
+    float: right;
+    width: 70%;
+  }
 }
