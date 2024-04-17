@@ -163,3 +163,34 @@ section {
 .credit {
   color: var(--tert-color);
 }
+
+
+.table-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 2em;
+  p {
+    width: 80%;
+  }
+  table {
+    margin: 1em;
+    border: 6px solid var(--tert-color);
+    background-color: var(--tert-color);
+    th, td {
+      border: 1px solid var(--sec-color);
+      background-color: var(--sec-color);
+      padding: 0 0.5em;
+    }
+    .land{
+      font-weight: bold;
+    }
+  }
+}
+.row-col-table {
+  tr{
+    th, td {
+      padding: 0.5em;
+    }
+  }
+}
