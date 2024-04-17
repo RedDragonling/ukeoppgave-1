@@ -139,3 +139,27 @@ section {
     margin-bottom: 2em;
   }
 }
+
+.images-box {
+  margin: 0.5em 0 2em;
+  img{
+    width: 500px;
+  }
+  figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 500px;
+    }
+    figcaption {
+      color: var(--main-color);
+      background-color: var(--font-color);
+      width: 500px;
+    }
+  }
+}
+
+.credit {
+  color: var(--tert-color);
+}
