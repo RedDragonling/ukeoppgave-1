@@ -117,3 +117,25 @@ section {
     width: 70%;
   }
 }
+
+.audio-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    height: 100px;
+  }
+  audio {
+    width: 200px;
+    background-color: var(--tert-color);
+    border-radius: 1em;
+  }
+  p {
+    color: var(--tert-color);
+    margin: 1em;
+  }
+  video {
+    border-radius: 1em;
+    margin-bottom: 2em;
+  }
+}
