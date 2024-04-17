@@ -2,6 +2,8 @@
   --main-color: #FFF7F1;
   --sec-color: #FFE4C9;
   --tert-color: #BED1CF;
+  --tert-alt-color: #cfdedc;
+  --tert-alt-2-color: #e2edeb;
   --font-color: #1f2121;
   --font-color-important: #E78895;
   --font-color-important-hover: #9b4c56;
@@ -185,10 +187,20 @@ section {
     .land{
       font-weight: bold;
     }
+    .top {
+      td {
+        background-color: var(--tert-alt-color);
+        border: 1px solid var(--tert-color);
+      }
+    }
   }
 }
 .row-col-table {
   tr{
+    th {
+      border: 1px solid var(--tert-alt-2-color);
+      background-color: var(--tert-alt-2-color);
+    }
     th, td {
       padding: 0.5em;
     }
